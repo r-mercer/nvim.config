@@ -8,67 +8,67 @@
       "version": "1.0.0 - 2.0.0"
     },
     "conform.nvim": {
-      "rev": "8314f4c"
+      "rev": "238f542"
     },
     "fidget.nvim": {
       "rev": "6446302"
     },
     "friendly-snippets": [],
     "mini.nvim": {
-      "rev": "02fc1af"
+      "rev": "8dccba8"
     },
     "monokai-pro.nvim": {
-      "rev": "3bf0144"
+      "rev": "8d43e77"
     },
     "neovim-tips": {
       "rev": "a437253"
     },
     "nui.nvim": [],
     "nvim": {
-      "rev": "6efc53e"
+      "rev": "beaf41a"
     },
     "nvim-dap": {
-      "rev": "03e83f1"
+      "rev": "cdfd55a"
     },
     "nvim-dap-ui": [],
     "nvim-lint": {
-      "rev": "1f19dac"
+      "rev": "ca6ea12"
     },
     "nvim-lspconfig": {
-      "rev": "0b38bc7"
+      "rev": "92ee7d4"
     },
     "nvim-nio": [],
     "nvim-treesitter": {
-      "rev": "99dfc5ac",
+      "rev": "5a7e5638",
       "version": "'main'"
     },
     "nvim-treesitter-context": {
       "version": "'main'"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "28a3494",
+      "rev": "d0d1233",
       "version": "'main'"
     },
     "plenary.nvim": [],
     "precognition.nvim": [],
     "render-markdown.nvim": {
-      "rev": "da6a7b2"
+      "rev": "ae89236"
     },
     "roslyn.nvim": {
-      "rev": "4ce6030"
+      "rev": "2b9a836"
     },
     "rustaceanvim": {
       "version": "6.0.0 - 7.0.0"
     },
     "smart-splits.nvim": {
-      "rev": "d2629b2"
+      "rev": "fdd63c5"
     },
     "telescope-fzf-native.nvim": {
       "rev": "6fea601"
     },
     "telescope-ui-select.nvim": [],
     "telescope.nvim": {
-      "rev": "3333a52"
+      "rev": "a8c2223"
     }
   }
 }
