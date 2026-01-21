@@ -22,6 +22,8 @@ require('nvim-treesitter').setup {
     'markdown',
     'rust',
     'sql',
+    'tsx',
+    'typescript',
     'toml',
     'vim',
     'yaml',

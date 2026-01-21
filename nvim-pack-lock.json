@@ -69,6 +69,10 @@
     "telescope-ui-select.nvim": [],
     "telescope.nvim": {
       "rev": "a8c2223"
+    },
+    "typescript-tools.nvim": {
+      "rev": "c2f5910",
+      "src": "https://github.com/pmizio/typescript-tools.nvim"
     }
   }
 }
