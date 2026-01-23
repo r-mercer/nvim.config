@@ -4,7 +4,14 @@ vim.pack.add {
 
 -- local presets = require 'markview.presets'
 require('render-markdown').setup {
-  completions = { lsp = { enabled = true } },
+  completions = {
+    lsp = {
+      enabled = true,
+    },
+  },
+  anti_conceal = {
+    enabled = false,
+  },
 }
 -- require('markview').setup {
 --   -- Path to user tips file
