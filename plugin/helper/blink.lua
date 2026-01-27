@@ -4,6 +4,7 @@ vim.pack.add {
     version = vim.version.range '1.*',
   },
   'https://github.com/rafamadriz/friendly-snippets',
+  'https://github.com/Kaiser-Yang/blink-cmp-avante',
   'https://github.com/L3MON4D3/LuaSnip',
 }
 
@@ -21,7 +22,16 @@ require('blink.cmp').setup {
   ghost_text = { enabled = true },
 
   sources = {
-    default = { 'lsp', 'path', 'snippets', 'buffer' },
+    default = { 'lsp', 'path', 'snippets', 'buffer', 'avante' },
+    providers = {
+      avante = {
+        module = 'blink-cmp-avante',
+        name = 'Avante',
+        opts = {
+          -- options for blink-cmp-avante
+        },
+      },
+    },
   },
 
   signature = { enabled = true },
