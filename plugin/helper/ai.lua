@@ -7,5 +7,5 @@ vim.pack.add {
   -- { src = 'https://github.com/zbirenbaum/copilot.lua' },
 }
 
-require('copilot.lua').setup()
-require('avante.nvim').setup()
+require('copilot').setup()
+require('avante').setup()
