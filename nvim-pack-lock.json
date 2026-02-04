@@ -33,6 +33,10 @@
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
+    "lazydev.nvim": {
+      "rev": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d",
+      "src": "https://github.com/folke/lazydev.nvim"
+    },
     "mini.nvim": {
       "rev": "9b935c218ddba02e5dc75c94f90143bce1f7c646",
       "src": "https://github.com/nvim-mini/mini.nvim"
