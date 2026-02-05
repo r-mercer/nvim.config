@@ -22,7 +22,7 @@ vim.keymap.set('n', '<A-k>', require('smart-splits').move_cursor_up, { desc = 'M
 vim.keymap.set('n', '<A-l>', require('smart-splits').move_cursor_right, { desc = 'Move frame right' })
 vim.keymap.set('n', '<A-\\>', require('smart-splits').move_cursor_previous, { desc = 'Move previous frame' })
 -- swapping buffers between windows
-vim.keymap.set('n', '<leader><leader>h', require('smart-splits').swap_buf_left, { desc = 'Move window left' })
-vim.keymap.set('n', '<leader><leader>j', require('smart-splits').swap_buf_down, { desc = 'Move window down' })
-vim.keymap.set('n', '<leader><leader>k', require('smart-splits').swap_buf_up, { desc = 'Move window up' })
-vim.keymap.set('n', '<leader><leader>l', require('smart-splits').swap_buf_right, { desc = 'Moev window right' })
+vim.keymap.set('n', '<leader><A-h>', require('smart-splits').swap_buf_left, { desc = 'Move window left' })
+vim.keymap.set('n', '<leader><A-j>', require('smart-splits').swap_buf_down, { desc = 'Move window down' })
+vim.keymap.set('n', '<leader><A-k>', require('smart-splits').swap_buf_up, { desc = 'Move window up' })
+vim.keymap.set('n', '<leader><A-l>', require('smart-splits').swap_buf_right, { desc = 'Moev window right' })
