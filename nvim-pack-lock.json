@@ -13,7 +13,7 @@
       "src": "https://github.com/Kaiser-Yang/blink-cmp-avante"
     },
     "blink.cmp": {
-      "rev": "bc54f81b6d92f91dac06c77c3ffccec5291e98cd",
+      "rev": "4b18c32adef2898f95cdef6192cbd5796c1a332d",
       "src": "https://github.com/Saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
     },
@@ -22,7 +22,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "copilot.lua": {
-      "rev": "746cc7aed285cc5fb99034b9c79fd06c56da388d",
+      "rev": "3faffefbd6ddeb52578535ec6b730e0b72d7fd1a",
       "src": "https://github.com/zbirenbaum/copilot.lua"
     },
     "fidget.nvim": {
@@ -34,7 +34,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "mini.nvim": {
-      "rev": "f28cd08c8be826355d64080400fab1764c9693dd",
+      "rev": "8c40d95931cbe6138391af9180e59439ed2e69df",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "monokai-pro.nvim": {
@@ -66,7 +66,7 @@
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
-      "rev": "3f58aeca0c6ece8a9fb8782ea3fcb6024f285be3",
+      "rev": "66fd02ad1c7ea31616d3ca678fa04e6d0b360824",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -74,7 +74,7 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "4967fa48b0fe7a7f92cee546c76bb4bb61bb14d5",
+      "rev": "92c9b016d16473dabd2bf3760196cf2d928edacc",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -101,7 +101,7 @@
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "roslyn.nvim": {
-      "rev": "24f7c91ee5e09c63104deaab68f932620f25c24a",
+      "rev": "56c421a02451cc61c8d63cfe9dc2079453e1ea6d",
       "src": "https://github.com/seblyng/roslyn.nvim"
     },
     "rustaceanvim": {
@@ -110,7 +110,7 @@
       "version": "6.0.0 - 7.0.0"
     },
     "smart-splits.nvim": {
-      "rev": "0e73ccf1d957c6d7b95435bd195dcbd62f44f8e2",
+      "rev": "208ac7ba3d56f76dda9fc55b004b84aaea7c7588",
       "src": "https://github.com/mrjones2014/smart-splits.nvim"
     },
     "telescope-fzf-native.nvim": {
