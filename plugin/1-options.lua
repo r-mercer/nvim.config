@@ -18,12 +18,12 @@ end
 -- User Interface Config
 vim.o.breakindent = true -- No wrapped line overhand
 vim.o.breakindentopt = 'list:-1' -- Add list padding
-vim.o.colorcolumn = '+1' -- Draw col on right of max width **** Test *****
+-- vim.o.colorcolumn = '+1' -- Draw col on right of max width **** Test *****
 vim.o.linebreak = true -- Wrap lines at break at
 vim.o.list = true -- Nice little text indicators
 vim.o.number = true -- Line numbers
 -- vim.o.pumheight 	= 10		-- Smaller popup menu		*** Test *
-vim.o.ruler = false -- No cursor location
+vim.o.ruler = true -- No cursor location
 vim.o.showmode = false -- No mode in commandline
 vim.o.signcolumn = 'yes' -- Always show
 vim.o.splitbelow = true -- Horizontal splits spawn below active window
@@ -46,9 +46,9 @@ vim.o.smartindent = true -- Not actually sure what this done ngl
 vim.o.spelloptions = 'camel' -- Treat camelCase word parts as separate words
 vim.o.tabstop = 2 -- Tabs are two spaces
 vim.o.softtabstop = 2 -- Does not actually insert tabs?
--- vim.o.virtualedit = 'block' -- Allow going past end of line in blockwise mode
+vim.o.virtualedit = 'block' -- Allow going past end of line in blockwise mode
 
--- vim.o.iskeyword = '@,48-57,_,192-255,-' -- Treat dash as `word` textobject part
+vim.o.iskeyword = '@,48-57,_,192-255,-' -- Treat dash as `word` textobject part
 
 -- Pattern for a start of numbered list (used in `gw`). This reads as
 -- "Start of list item is: at least one special character (digit, -, +, *)
