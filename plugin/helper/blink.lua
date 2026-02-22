@@ -4,7 +4,7 @@ vim.pack.add {
     version = vim.version.range '1.*',
   },
   'https://github.com/rafamadriz/friendly-snippets',
-  'https://github.com/Kaiser-Yang/blink-cmp-avante',
+  'https://github.com/giuxtaposition/blink-cmp-copilot',
   'https://github.com/L3MON4D3/LuaSnip',
 }
 
@@ -22,14 +22,13 @@ require('blink.cmp').setup {
   ghost_text = { enabled = true },
 
   sources = {
-    default = { 'lsp', 'path', 'snippets', 'buffer', 'avante' },
+    default = { 'lsp', 'path', 'snippets', 'buffer', 'copilot' },
     providers = {
-      avante = {
-        module = 'blink-cmp-avante',
-        name = 'Avante',
-        opts = {
-          -- options for blink-cmp-avante
-        },
+      copilot = {
+        name = 'copilot',
+        module = 'blink-cmp-copilot',
+        score_offset = 100,
+        async = true,
       },
     },
   },
