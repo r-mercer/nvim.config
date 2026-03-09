@@ -18,11 +18,11 @@
       "version": "1.0.0 - 2.0.0"
     },
     "conform.nvim": {
-      "rev": "e969e302bced7ffb9a0a0323629f31feb0ca35a6",
+      "rev": "40dcec5555f960b0a04340d76eabdf4efe78599d",
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "copilot.lua": {
-      "rev": "ef4bfc579b404c531c1738bacca82ed61501d877",
+      "rev": "575646d22e4a80758935e92f7be7e210c1ceb5bc",
       "src": "https://github.com/zbirenbaum/copilot.lua"
     },
     "fidget.nvim": {
@@ -34,7 +34,7 @@
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "mini.nvim": {
-      "rev": "577d2dcb558efce1518c45a76345e01bf346c8e8",
+      "rev": "cad365c212fb1e332cb93fa8f72697125799d00a",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "monokai-pro.nvim": {
@@ -50,11 +50,11 @@
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim": {
-      "rev": "0a5de4da015a175f416d6ef1eda84661623e0500",
+      "rev": "12c004cde3f36cb1d57242f1e6aac46b09a0e5b4",
       "src": "https://github.com/catppuccin/nvim"
     },
     "nvim-dap": {
-      "rev": "b516f20b487b0ac6a281e376dfac1d16b5040041",
+      "rev": "a9d8cb68ee7184111dc66156c4a2ebabfbe01bc5",
       "src": "https://github.com/mfussenegger/nvim-dap"
     },
     "nvim-dap-ui": {
@@ -66,7 +66,7 @@
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
-      "rev": "a40d22e75d951ad2fcf236ceb013d88f81d2cc9a",
+      "rev": "2163c54bb6cfec53e3e555665ada945b8c8331b9",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -74,17 +74,17 @@
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
     "nvim-treesitter": {
-      "rev": "0f5b204603234a523fafa8f6b860fd36f80a23f6",
+      "rev": "5cb05e1b0fa3c469958a2b26f36b3fe930af221c",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
     "nvim-treesitter-context": {
-      "rev": "64dd4cf3f6fd0ab17622c5ce15c91fc539c3f24a",
+      "rev": "529ee357b8c03d76ff71233afed68fd0f5fe10b1",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-context",
       "version": "'master'"
     },
     "nvim-treesitter-textobjects": {
-      "rev": "a0e182ae21fda68c59d1f36c9ed45600aef50311",
+      "rev": "4e91b5d0394329a229725b021a8ea217099826ef",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
       "version": "'main'"
     },
@@ -97,7 +97,7 @@
       "src": "https://github.com/tris203/precognition.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "1c958131c083c8557ea499fdb08c88b8afb05c4e",
+      "rev": "e3c18ddd27a853f85a6f513a864cf4f2982b9f26",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "roslyn.nvim": {
@@ -110,7 +110,7 @@
       "version": "6.0.0 - 7.0.0"
     },
     "smart-splits.nvim": {
-      "rev": "23f1e57d5af462c69e988642c020430449a7b1b0",
+      "rev": "25bf40abf79720ebfa98e09259b7c42942055f4c",
       "src": "https://github.com/mrjones2014/smart-splits.nvim"
     },
     "telescope-fzf-native.nvim": {
