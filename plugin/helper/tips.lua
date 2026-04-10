@@ -1,5 +1,5 @@
+-- nui.nvim is declared in plugin/helper/ai.lua
 vim.pack.add {
-  'https://github.com/MunifTanjim/nui.nvim',
   'https://github.com/saxon1964/neovim-tips',
 }
 

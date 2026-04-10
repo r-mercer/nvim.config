@@ -25,4 +25,4 @@ vim.keymap.set('n', '<A-\\>', require('smart-splits').move_cursor_previous, { de
 vim.keymap.set('n', '<leader><A-h>', require('smart-splits').swap_buf_left, { desc = 'Move window left' })
 vim.keymap.set('n', '<leader><A-j>', require('smart-splits').swap_buf_down, { desc = 'Move window down' })
 vim.keymap.set('n', '<leader><A-k>', require('smart-splits').swap_buf_up, { desc = 'Move window up' })
-vim.keymap.set('n', '<leader><A-l>', require('smart-splits').swap_buf_right, { desc = 'Moev window right' })
+vim.keymap.set('n', '<leader><A-l>', require('smart-splits').swap_buf_right, { desc = 'Move window right' })

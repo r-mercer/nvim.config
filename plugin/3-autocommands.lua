@@ -24,18 +24,13 @@ local f = function()
 end
 _G.Config.new_autocmd('FileType', nil, f, "Proper 'formatoptions'")
 
--- Conform Auto Format On Save
-vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = '*',
-  callback = function(args)
-    require('conform').format { bufnr = args.buf }
-  end,
-})
-
 -- Linting Auto Command
 vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
   callback = function()
-    require('lint').try_lint()
+    local ok, lint = pcall(require, 'lint')
+    if ok then
+      lint.try_lint()
+    end
   end,
 })
 

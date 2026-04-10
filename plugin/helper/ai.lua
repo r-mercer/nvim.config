@@ -1,10 +1,7 @@
+-- plenary.nvim is declared in init.lua (early bootstrap)
 vim.pack.add {
-  { src = 'https://github.com/nvim-lua/plenary.nvim' },
-  -- { src = 'https://github.com/nvim-lua/plenary.nvim' },
   { src = 'https://github.com/MunifTanjim/nui.nvim' },
-  -- { src = 'https://github.com/yetone/avante.nvim' },
   { src = 'https://github.com/zbirenbaum/copilot.lua' },
-  -- { src = 'https://github.com/zbirenbaum/copilot.lua' },
 }
 
 require('copilot').setup {
@@ -30,7 +27,7 @@ require('copilot').setup {
     debounce = 15,
     trigger_on_accept = true,
     keymap = {
-      accept = '<A-l>',
+      accept = '<A-;>',
       accept_word = false,
       accept_line = false,
       next = '<A-]>',
