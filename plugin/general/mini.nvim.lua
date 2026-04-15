@@ -13,6 +13,11 @@ miniclue.setup {
   clues = {
     -- This is defined in 'plugin/20_keymaps.lua' with Leader group descriptions
     Config.leader_group_clues,
+    miniclue.gen_clues.square_brackets(),
+    { mode = 'n', keys = '[[', desc = 'Copilot previous suggestion' },
+    { mode = 'n', keys = ']]', desc = 'Copilot next suggestion' },
+    { mode = 'n', keys = 'gr', desc = 'Copilot refresh suggestion' },
+    { mode = 'n', keys = '<C-w><C-r>', desc = 'Enter Resize Mode' },
     miniclue.gen_clues.builtin_completion(),
     miniclue.gen_clues.g(),
     miniclue.gen_clues.marks(),
@@ -23,7 +28,11 @@ miniclue.setup {
     --   `<C-w>` is pressed again. Keep pressing just `+` to increase height.
     --   Try pressing `-` to decrease height.
     -- - Stop submode either by `<Esc>` or by any key that is not in submode.
-    miniclue.gen_clues.windows { submode_resize = true },
+    miniclue.gen_clues.windows {
+      submode_move = true,
+      submode_navigate = true,
+      submode_resize = true,
+    },
     miniclue.gen_clues.z(),
   },
   -- Explicitly opt-in for set of common keys to trigger clue window
@@ -31,10 +40,8 @@ miniclue.setup {
     { mode = 'n', keys = '<Leader>' }, -- Leader triggers
     { mode = 'x', keys = '<Leader>' },
     -- { mode = 'n', keys = '\\' },       -- mini.basics
-    -- { mode = 'n', keys = '[' },        -- mini.bracketed
+    { mode = 'n', keys = '[' },
     { mode = 'n', keys = ']' },
-    { mode = 'x', keys = '[' },
-    { mode = 'x', keys = ']' },
     { mode = 'i', keys = '<C-x>' }, -- Built-in completion
     { mode = 'n', keys = 'g' }, -- `g` key
     { mode = 'x', keys = 'g' },
@@ -88,6 +95,7 @@ vim.api.nvim_create_autocmd('User', {
     local buf_id = args.data.buf_id
     map_split(buf_id, '<C-S>', 'belowright horizontal')
     map_split(buf_id, '<C-s>', 'belowright vertical')
+    MiniClue.ensure_buf_triggers(buf_id)
   end,
 })
 
@@ -113,6 +121,7 @@ vim.api.nvim_create_autocmd('User', {
   callback = function(args)
     local buf_id = args.data.buf_id
     vim.keymap.set('n', 'g.', toggle_dotfiles, { buffer = buf_id, desc = 'Toggle DotFiles' })
+    MiniClue.ensure_buf_triggers(buf_id)
   end,
 })
 

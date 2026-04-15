@@ -4,6 +4,8 @@ vim.keymap.set('n', '<leader>gra', function()
   -- or vim.lsp.buf.codeAction() if you don't want grouping.
 end, { silent = true, buffer = bufnr })
 
+MiniClue.ensure_buf_triggers(bufnr)
+
 vim.keymap.set(
   'n',
   'K', -- Override Neovim's built-in hover keymap with rustaceanvim's hover actions
