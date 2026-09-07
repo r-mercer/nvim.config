@@ -11,6 +11,7 @@ _G.Config.leader_group_clues = {
   { mode = 'n', keys = '<Leader>s', desc = '+Session' },
 
   { mode = 'x', keys = '<Leader>a', desc = '+[A]I' },
+  { mode = 'x', keys = '<Leader>d', desc = '+[D]ebug' },
   { mode = 'x', keys = '<Leader>f', desc = '+[F]ind' },
   { mode = 'x', keys = '<Leader>l', desc = '+Language' },
 }

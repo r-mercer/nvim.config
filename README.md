@@ -48,6 +48,7 @@ This could be in several places:
 | rust-analyzer | rust | LSP | `brew install rust-analyzer` |
 | rustfmt | rust | Formatter | `rustup component add rustfmt` |
 | codelldb | rust | DAP | `:MasonInstall codelldb` (inside Neovim) |
+| debugpy | python | DAP | `:MasonInstall debugpy` (inside Neovim) |
 | roslyn-language-server | csharp | LSP | `dotnet tool install -g roslyn-language-server --prerelease` (requires the .NET SDK; see [roslyn.nvim](https://github.com/seblyng/roslyn.nvim#-installation) for the up-to-date feed) |
 | basedpyright | python | LSP | `brew install basedpyright` |
 | ruff | python | LSP (lint) / Formatter | `brew install ruff` |
@@ -66,6 +67,7 @@ This could be in several places:
 | `catppuccin/nvim` | Alternate colorscheme setup | `init.lua` / `plugin/general/colorscheme.lua` |
 | `conform.nvim` | Format on save | `plugin/editor/conform.lua` |
 | `nvim-dap` | Debug adapter client | `plugin/editor/dap.lua` |
+| `nvim-dap-python` | Python debug adapter and test-debug helpers | `plugin/editor/dap.lua` |
 | `nvim-dap-view` | Single-window debugger UI | `plugin/editor/dap.lua` |
 | `mason.nvim` | Debug adapter installer (codelldb) | `plugin/editor/dap.lua` |
 | `nvim-lint` | Filetype lint runner | `plugin/editor/lint.lua` |

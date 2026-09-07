@@ -8,6 +8,17 @@ vim.lsp.config('basedpyright', {
     basedpyright = {
       -- Ruff owns import organisation
       disableOrganizeImports = true,
+      analysis = {
+        -- basedpyright defaults to 'recommended', not to pyright's 'standard':
+        -- every missing annotation and every inferred-unknown type becomes a
+        -- warning. `def f(x): return json.dumps(x)` alone draws two. On a
+        -- partly annotated codebase that volume buries the real errors.
+        --
+        -- This only sets a default for projects that say nothing themselves ---
+        -- a repo's own [tool.basedpyright] in pyproject.toml still wins, so
+        -- client projects are still checked on their own terms.
+        typeCheckingMode = 'standard',
+      },
     },
   },
 })

@@ -39,20 +39,25 @@ vim.api.nvim_create_autocmd('PackChanged', {
 })
 
 require('nvim-treesitter').install {
+  'bash',
   'c',
   'c_sharp',
   'diff',
+  'dockerfile',
   'git_config',
   'git_rebase',
   'gitattributes',
   'gitcommit',
   'gitignore',
   'html',
+  'ini', -- tox.ini, pytest.ini, setup.cfg, alembic.ini
   'javascript',
   'json',
   'lua',
   'markdown',
   'python',
+  'regex',
+  'requirements',
   'rust',
   'sql',
   'tsx',

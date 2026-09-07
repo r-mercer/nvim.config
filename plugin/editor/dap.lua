@@ -1,5 +1,6 @@
 vim.pack.add {
   'https://github.com/mfussenegger/nvim-dap',
+  'https://github.com/mfussenegger/nvim-dap-python',
   'https://github.com/igorlfs/nvim-dap-view',
   'https://github.com/mason-org/mason.nvim',
 }
@@ -15,6 +16,21 @@ require('dap-view').setup {
 
 -- Rust debugging (codelldb adapter + configurations) is provided by
 -- rustaceanvim; see plugin/editor/lang/rust.lua.
+
+-- Python: debugpy hosts the adapter, the *project's* interpreter runs the code.
+-- Those are deliberately two different pythons. dap-python's enrich_config
+-- resolves the debuggee per session --- VIRTUAL_ENV, then CONDA_PREFIX, then the
+-- first venv/.venv/env/.env directory under cwd or an attached LSP's root_dir ---
+-- so this adapter, living in mason's own venv, debugs a 3.9 project fine.
+--
+-- `setup('uv')` is the install-free alternative: it shells out to
+-- `uv run --with debugpy`, fetching debugpy per project. Kept mason for parity
+-- with codelldb, and so a non-uv project debugs the same way.
+--
+-- Test keymaps are buffer-local, in after/ftplugin/python.lua.
+local debugpy_venv = vim.fs.joinpath(vim.fn.stdpath 'data', 'mason/packages/debugpy/venv')
+local bindir = vim.fn.has 'win32' == 1 and 'Scripts' or 'bin'
+require('dap-python').setup(vim.fs.joinpath(debugpy_venv, bindir, 'python'))
 
 local dap = require 'dap'
 local dapview = require 'dap-view'
